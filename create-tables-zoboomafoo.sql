@@ -54,8 +54,7 @@ CREATE TABLE funcionarios
     rg NUMERIC(10) NOT NULL,
     cpf VARCHAR(11) NOT NULL,
     crmv NUMERIC(10) NOT NULL,
-    nome NUMERIC(250) NOT NULL,
-    cod_endereco INT NOT NULL,
+    nome VARCHAR(250) NOT NULL,
     dt_nascimento smalldatetime NOT NULL,
     CONSTRAINT funcionario_pk PRIMARY KEY(matricula),
     CONSTRAINT funcionario_fk_endereco FOREIGN KEY(cod_endereco) REFERENCES enderecos (cod_endereco),
@@ -107,14 +106,14 @@ PRINT 'Table creation: Animais'
 CREATE TABLE animais
 (
     cod_animal INT NOT NULL CHECK(cod_animal > 0),
-    cod_container INT NOT NULL,
+    cod_conteiner INT NOT NULL,
     cod_classe INT NOT NULL,
     altura NUMERIC(5,2) NOT NULL,
     cor VARCHAR(50) NOT NULL,
     especie VARCHAR(50) NOT NULL,
     nome VARCHAR(150) NOT NULL,
     CONSTRAINT animal_pk PRIMARY KEY(cod_animal),
-    CONSTRAINT animal_fk_container FOREIGN KEY(cod_container) REFERENCES containers(cod_container),
+    CONSTRAINT animal_fk_conteiner FOREIGN KEY(cod_conteiner) REFERENCES conteiners(cod_conteiner),
     CONSTRAINT animal_fk_classe FOREIGN KEY(cod_classe) REFERENCES classes(cod_classe)
 );
 
@@ -125,12 +124,12 @@ PRINT 'Table creation: Historico de Consultas'
 CREATE TABLE historico_consultas
 (
     cod_consulta INT NOT NULL CHECK(cod_consulta > 0),
-    cod_funcionario INT NOT NULL,
+    matricula INT NOT NULL,
     cod_animal INT NOT NULL,
     dt_consulta smalldatetime NOT NULL,
     CONSTRAINT historico_consulta_pk PRIMARY KEY( cod_consulta ),
-    CONSTRAINT historico_consulta_fk_funcionario FOREIGN KEY (cod_funcionario) REFERENCES funcionarios (cod_funcionario),
-    CONSTRAINT historico_consulta_fk_animal FOREIGN KEY (cod_animal) REFERENCES animal (cod_animal)
+    CONSTRAINT historico_consulta_fk_funcionario FOREIGN KEY (matricula) REFERENCES funcionarios (matricula),
+    CONSTRAINT historico_consulta_fk_animal FOREIGN KEY (cod_animal) REFERENCES animais (cod_animal)
 );
 
 --------------------------------------------------------------------
@@ -144,7 +143,7 @@ CREATE TABLE limpezas
     cod_classe INT NOT NULL,
     dt_limpeza smalldatetime NOT NULL,
     CONSTRAINT limpeza_pk PRIMARY KEY(cod_limpeza),
-    CONSTRAINT limpezas_fk_conteiner FOREIGN KEY (cod_container) REFERENCES conteiners (cod_container),
+    CONSTRAINT limpezas_fk_conteiner FOREIGN KEY (cod_conteiner) REFERENCES conteiners (cod_conteiner),
     CONSTRAINT limpezas_fk_classe FOREIGN KEY (cod_classe) REFERENCES classes (cod_classe)
 );
 
@@ -154,9 +153,9 @@ PRINT 'Table creation: Acompanha'
 
 CREATE TABLE acompanha
 (
-    cod_animal INT NOT NULL CHECK(cod_consulta > 0),
-    cod_funcionario INT NOT NULL CHECK(cod_funcionario > 0),
-    CONSTRAINT acompanha_pk PRIMARY KEY(cod_animal, cod_funcionario),
-    CONSTRAINT acompanha_fk_animal FOREIGN KEY (cod_animal) REFERENCES conteiners (cod_animal),
-    CONSTRAINT acompanha_fk_funcionario FOREIGN KEY (cod_funcionario) REFERENCES classes (cod_funcionario)
+    cod_animal INT NOT NULL CHECK(cod_animal > 0),
+    matricula INT NOT NULL CHECK(matricula > 0),
+    CONSTRAINT acompanha_pk PRIMARY KEY(cod_animal, matricula),
+    CONSTRAINT acompanha_fk_animal FOREIGN KEY (cod_animal) REFERENCES animais (cod_animal),
+    CONSTRAINT acompanha_fk_funcionario FOREIGN KEY (matricula) REFERENCES funcionarios (matricula)
 );
