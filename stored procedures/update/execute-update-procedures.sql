@@ -24,8 +24,8 @@ GO
 
 EXECUTE dbo.USP_MODIFICAR_FUNCIONARIO
     20180057,
-    2,
-    2,
+    1,
+    1,
     2068,
     "03717981080",
     654321,
@@ -41,8 +41,8 @@ GO
 
 EXECUTE dbo.USP_MODIFICAR_ALA
     1,
-    2,
-    2
+    1,
+    1
 GO
 
 EXECUTE dbo.USP_MODIFICAR_CONTEINER
@@ -53,8 +53,8 @@ GO
 
 EXECUTE dbo.USP_MODIFICAR_ANIMAL
     1,
-    2,
-    2,
+    1,
+    1,
     2.90,
     "Cor de burro quando volta",
     "Mamalophitecos",
@@ -63,14 +63,14 @@ GO
 
 EXECUTE dbo.USP_MODIFICAR_HISTORICO_DE_CONSULTA
     1,
-    222475,
-    2,
+    20180057,
+    1,
     "2021-10-31 12:00:00"
 GO
 
 EXECUTE dbo.USP_MODIFICAR_LIMPEZA
     1,
-    2,
-    2,
+    1,
+    1,
     "2021-10-31 12:00:00"
 GO
