@@ -154,7 +154,7 @@ CREATE PROCEDURE dbo.USP_MODIFICAR_HISTORICO_DE_CONSULTA
   @p_dt_consulta Datetime
 AS
 BEGIN
-    UPDATE consultas
+    UPDATE historico_consultas
             SET 
             @p_matricula = ISNULL(@p_matricula, matricula),
             @p_cod_animal = ISNULL(@p_cod_animal, cod_animal),
