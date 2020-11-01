@@ -1,0 +1,11 @@
+DROP TABLE [Zoboomafoo].dbo.limpeza
+DROP TABLE [Zoboomafoo].dbo.historico
+DROP TABLE [Zoboomafoo].dbo.acompanha
+DROP TABLE [Zoboomafoo].dbo.animais
+DROP TABLE [Zoboomafoo].dbo.conteiner
+DROP TABLE [Zoboomafoo].dbo.funcionario	
+DROP TABLE [Zoboomafoo].dbo.enderecos
+DROP TABLE [Zoboomafoo].dbo.cidades
+DROP TABLE [Zoboomafoo].dbo.cargos
+DROP TABLE [Zoboomafoo].dbo.alas
+DROP TABLE [Zoboomafoo].dbo.classes
