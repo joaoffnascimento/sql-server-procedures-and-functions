@@ -49,8 +49,6 @@ CREATE TABLE funcionarios
     matricula INT NOT NULL CHECK( matricula > 0 ),
     cod_endereco INT NOT NULL,
     cod_cargo INT NOT NULL,
-    cod_consulta INT NOT NULL,
-    dt_consulta smalldatetime NOT NULL,
     rg NUMERIC(10) NOT NULL,
     cpf VARCHAR(11) NOT NULL,
     crmv NUMERIC(10) NOT NULL,
