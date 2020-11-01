@@ -23,8 +23,8 @@ AS
 BEGIN
     UPDATE cargos
             SET 
-            @p_nom_cargo = ISNULL(@p_nom_cargo, nom_cargo),
-            @p_salario = ISNULL(@p_salario, salario)
+            nom_cargo = ISNULL(@p_nom_cargo, nom_cargo),
+            salario = ISNULL(@p_salario, salario)
             WHERE cod_cargo = @p_cod_cargo
 END
 
@@ -40,10 +40,10 @@ AS
 BEGIN
     UPDATE enderecos
             SET 
-            @p_cod_cidade  = ISNULL(@p_cod_cidade, cod_cidade),
-            @p_nm_rua = ISNULL(@p_nm_rua, nm_rua),
-            @p_nm_bairro = ISNULL(@p_nm_bairro, nm_bairro),
-            @p_numero = ISNULL(@p_numero, numero)
+            cod_cidade  = ISNULL(@p_cod_cidade, cod_cidade),
+            nm_rua = ISNULL(@p_nm_rua, nm_rua),
+            nm_bairro = ISNULL(@p_nm_bairro, nm_bairro),
+            numero = ISNULL(@p_numero, numero)
             WHERE cod_endereco = @p_cod_endereco
 END
 
@@ -62,13 +62,13 @@ AS
 BEGIN
     UPDATE funcionarios
             SET 
-            @p_cod_endereco  = ISNULL(@p_cod_endereco, cod_endereco),
-            @p_cod_cargo = ISNULL(@p_cod_cargo, cod_cargo),
-            @p_rg = ISNULL(@p_rg, rg),
-            @p_cpf = ISNULL(@p_cpf, cpf),
-            @p_crmv  = ISNULL(@p_crmv, crmv),
-            @p_nome = ISNULL(@p_nome, nome),
-            @p_dt_nascimento = ISNULL(@p_dt_nascimento, dt_nascimento)
+            cod_endereco  = ISNULL(@p_cod_endereco, cod_endereco),
+            cod_cargo = ISNULL(@p_cod_cargo, cod_cargo),
+            rg = ISNULL(@p_rg, rg),
+            cpf = ISNULL(@p_cpf, cpf),
+            crmv  = ISNULL(@p_crmv, crmv),
+            nome = ISNULL(@p_nome, nome),
+            dt_nascimento = ISNULL(@p_dt_nascimento, dt_nascimento)
 
             WHERE matricula = @p_matricula
 END
@@ -83,8 +83,8 @@ AS
 BEGIN
     UPDATE classes
             SET 
-            @p_nm_classe = ISNULL(@p_nm_classe, nm_classe),
-            @p_descricao = ISNULL(@p_descricao, descricao)
+            nm_classe = ISNULL(@p_nm_classe, nm_classe),
+            descricao = ISNULL(@p_descricao, descricao)
             
             WHERE cod_classe = @p_cod_classe
 END
@@ -99,8 +99,8 @@ AS
 BEGIN
     UPDATE alas
             SET 
-            @p_cod_classe = ISNULL(@p_cod_classe, cod_classe),
-            @p_num_ala = ISNULL(@p_num_ala, num_ala)
+            cod_classe = ISNULL(@p_cod_classe, cod_classe),
+            num_ala = ISNULL(@p_num_ala, num_ala)
             
             WHERE cod_ala = @p_cod_ala
 END
@@ -115,8 +115,8 @@ AS
 BEGIN
     UPDATE conteiners
             SET 
-            @p_cod_ala = ISNULL(@p_cod_ala, cod_ala),
-            @p_tipo = ISNULL(@p_tipo, tipo)
+            cod_ala = ISNULL(@p_cod_ala, cod_ala),
+            tipo = ISNULL(@p_tipo, tipo)
             
             WHERE cod_conteiner = @p_cod_conteiner
 END
@@ -135,12 +135,12 @@ AS
 BEGIN
     UPDATE animais
             SET 
-            @p_cod_conteiner = ISNULL(@p_cod_conteiner, cod_conteiner),
-            @p_cod_classe = ISNULL(@p_cod_classe, cod_classe),
-            @p_altura = ISNULL(@p_altura, altura),
-            @p_cor = ISNULL(@p_cor, cor),
-            @p_especie = ISNULL(@p_especie, especie),
-            @p_nome = ISNULL(@p_nome, nome)
+            cod_conteiner = ISNULL(@p_cod_conteiner, cod_conteiner),
+            cod_classe = ISNULL(@p_cod_classe, cod_classe),
+            altura = ISNULL(@p_altura, altura),
+            cor = ISNULL(@p_cor, cor),
+            especie = ISNULL(@p_especie, especie),
+            nome = ISNULL(@p_nome, nome)
             
             WHERE cod_animal = @p_cod_animal
 END
@@ -156,9 +156,9 @@ AS
 BEGIN
     UPDATE historico_consultas
             SET 
-            @p_matricula = ISNULL(@p_matricula, matricula),
-            @p_cod_animal = ISNULL(@p_cod_animal, cod_animal),
-            @p_dt_consulta = ISNULL(@p_dt_consulta, dt_consulta)
+            matricula = ISNULL(@p_matricula, matricula),
+            cod_animal = ISNULL(@p_cod_animal, cod_animal),
+            dt_consulta = ISNULL(@p_dt_consulta, dt_consulta)
             
             WHERE cod_consulta = @p_cod_consulta
 END
@@ -174,9 +174,9 @@ AS
 BEGIN
     UPDATE limpezas
             SET 
-            @p_cod_conteiner = ISNULL(@p_cod_conteiner, cod_conteiner),
-            @p_cod_classe = ISNULL(@p_cod_classe, cod_classe),
-            @p_dt_limpeza = ISNULL(@p_dt_limpeza, dt_limpeza)
+            cod_conteiner = ISNULL(@p_cod_conteiner, cod_conteiner),
+            cod_classe = ISNULL(@p_cod_classe, cod_classe),
+            dt_limpeza = ISNULL(@p_dt_limpeza, dt_limpeza)
             
             WHERE cod_limpeza = @p_cod_limpeza
 END
