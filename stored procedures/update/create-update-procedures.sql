@@ -2,7 +2,7 @@ USE Zoboomafoo
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_CIDADE
+CREATE PROCEDURE dbo.USP_MODIFICAR_CIDADE
     @p_cod_cidade int,
     @p_nm_cidade varchar(50)
 AS
@@ -15,7 +15,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_CARGO
+CREATE PROCEDURE dbo.USP_MODIFICAR_CARGO
     @p_cod_cargo int,
     @p_nom_cargo varchar(40),
     @p_salario int
@@ -30,7 +30,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_ENDERECO
+CREATE PROCEDURE dbo.USP_MODIFICAR_ENDERECO
     @p_cod_endereco int,
     @p_cod_cidade int,
     @p_nm_rua VARCHAR(150),
@@ -49,7 +49,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_FUNCIONARIO
+CREATE PROCEDURE dbo.USP_MODIFICAR_FUNCIONARIO
     @p_matricula int,
     @p_cod_endereco int,
     @p_cod_cargo int,
@@ -75,7 +75,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_CLASSE
+CREATE PROCEDURE dbo.USP_MODIFICAR_CLASSE
     @p_cod_classe int,
     @p_nm_classe varchar(50),
     @p_descricao varchar(500)
@@ -91,7 +91,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_ALA
+CREATE PROCEDURE dbo.USP_MODIFICAR_ALA
   @p_cod_ala int,
   @p_cod_classe int,
   @p_num_ala int
@@ -107,7 +107,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_CONTEINER
+CREATE PROCEDURE dbo.USP_MODIFICAR_CONTEINER
   @p_cod_conteiner int,
   @p_cod_ala int,
   @p_tipo varchar(50)
@@ -123,7 +123,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_ANIMAL
+CREATE PROCEDURE dbo.USP_MODIFICAR_ANIMAL
   @p_cod_animal int,
   @p_cod_conteiner int,
   @p_cod_classe int,
@@ -147,7 +147,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_HISTORICO_DE_CONSULTA
+CREATE PROCEDURE dbo.USP_MODIFICAR_HISTORICO_DE_CONSULTA
   @p_cod_consulta int,
   @p_matricula int,
   @p_cod_animal int,
@@ -165,7 +165,7 @@ END
 
 GO
 
-CREATE PROCEDURE DBO.USP_MODIFICAR_LIMPEZA
+CREATE PROCEDURE dbo.USP_MODIFICAR_LIMPEZA
   @p_cod_limpeza int,
   @p_cod_conteiner int,
   @p_cod_classe int,

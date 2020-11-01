@@ -1,3 +1,7 @@
+USE Zoboomafoo
+
+GO
+
 EXECUTE dbo.USP_CRIAR_CIDADE
     1,
     "Lagarto"
