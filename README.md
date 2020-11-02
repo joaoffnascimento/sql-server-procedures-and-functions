@@ -18,6 +18,8 @@
 <img src="./img/sql docker.png" align="center">
 </div>
 
+</br>
+
 *Docker extension for VScode*; 
 
 <div align="center">
@@ -25,12 +27,20 @@
 <img src="./img/docker-extension.png" align="center">
 </div>
 
+
+</br>
+
+
 *VScode to write SQL Scripts* :p
 
 <div align="center">
 </br>
 <img src="./img/vscode.png" align="center">
 </div>
+
+
+</br>
+
 
 *DBeaver SQL client software.*
 
