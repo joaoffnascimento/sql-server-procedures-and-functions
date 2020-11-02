@@ -95,9 +95,9 @@ END
 GO
 
 CREATE PROCEDURE dbo.USP_MODIFICAR_ALA
-  @p_cod_ala int,
-  @p_cod_classe int,
-  @p_num_ala int
+    @p_cod_ala int,
+    @p_cod_classe int,
+    @p_num_ala int
 AS
 BEGIN
     UPDATE alas
@@ -111,9 +111,9 @@ END
 GO
 
 CREATE PROCEDURE dbo.USP_MODIFICAR_CONTEINER
-  @p_cod_conteiner int,
-  @p_cod_ala int,
-  @p_tipo varchar(50)
+    @p_cod_conteiner int,
+    @p_cod_ala int,
+    @p_tipo varchar(50)
 AS
 BEGIN
     UPDATE conteiners
@@ -127,13 +127,13 @@ END
 GO
 
 CREATE PROCEDURE dbo.USP_MODIFICAR_ANIMAL
-  @p_cod_animal int,
-  @p_cod_conteiner int,
-  @p_cod_classe int,
-  @p_altura FLOAT,
-  @p_cor VARCHAR(50),
-  @p_especie VARCHAR(50),
-  @p_nome VARCHAR(150)
+    @p_cod_animal int,
+    @p_cod_conteiner int,
+    @p_cod_classe int,
+    @p_altura FLOAT,
+    @p_cor VARCHAR(50),
+    @p_especie VARCHAR(50),
+    @p_nome VARCHAR(150)
 AS
 BEGIN
     UPDATE animais
@@ -151,10 +151,10 @@ END
 GO
 
 CREATE PROCEDURE dbo.USP_MODIFICAR_HISTORICO_DE_CONSULTA
-  @p_cod_consulta int,
-  @p_matricula int,
-  @p_cod_animal int,
-  @p_dt_consulta Datetime
+    @p_cod_consulta int,
+    @p_matricula int,
+    @p_cod_animal int,
+    @p_dt_consulta Datetime
 AS
 BEGIN
     UPDATE historico_consultas
@@ -169,10 +169,10 @@ END
 GO
 
 CREATE PROCEDURE dbo.USP_MODIFICAR_LIMPEZA
-  @p_cod_limpeza int,
-  @p_cod_conteiner int,
-  @p_cod_classe int,
-  @p_dt_limpeza Datetime
+    @p_cod_limpeza int,
+    @p_cod_conteiner int,
+    @p_cod_classe int,
+    @p_dt_limpeza Datetime
 AS
 BEGIN
     UPDATE limpezas
