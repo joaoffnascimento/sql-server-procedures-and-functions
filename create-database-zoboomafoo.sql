@@ -1,3 +1,6 @@
+-- Created by: João Felipe Fonseca Nascimento
+-- joao.nascimento98@academico.ifs.edu.br - 2020
+
 if exists (select name from master.dbo.sysdatabases where name = N'Zoboomafoo')
 	drop database [Zoboomafoo]
 go

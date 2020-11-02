@@ -1,3 +1,6 @@
+-- Created by: João Felipe Fonseca Nascimento
+-- joao.nascimento98@academico.ifs.edu.br - 2020
+
 DROP TABLE [Zoboomafoo].dbo.limpeza
 DROP TABLE [Zoboomafoo].dbo.historico
 DROP TABLE [Zoboomafoo].dbo.acompanha

@@ -1,3 +1,6 @@
+-- Created by: João Felipe Fonseca Nascimento
+-- joao.nascimento98@academico.ifs.edu.br - 2020
+
 /* SCRIPT DE CRIAÇÃO DAS TABELA DA PRATICA DE ADM DE BANCO - ZOBOOMAFOO */
 
 USE [Zoboomafoo]
