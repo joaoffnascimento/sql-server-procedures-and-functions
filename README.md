@@ -120,3 +120,12 @@
 </br>
 <img src="./img/updated-example-01.png" align="center">
 </div>
+
+## [ 07 ] : **Create scalar functions**
+
+    Create scalar functions `create-scalar-functions.sql` script
+
+<div align="center">
+</br>
+<img src="./img/scalar-create.png" align="center">
+</div>
