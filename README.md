@@ -11,28 +11,31 @@
 
 ### **I'm using**:  
 
-> SQL Server for linux with docker;
+*SQL Server for linux with docker*;
 
 <div align="center">
+</br>
 <img src="./img/sql docker.png" align="center">
 </div>
 
-> Docker extension for VScode; 
+*Docker extension for VScode*; 
 
 <div align="center">
+</br>
 <img src="./img/docker-extension.png" align="center">
 </div>
 
-> VScode to write SQL Scripts :p
-
+*VScode to write SQL Scripts* :p
 
 <div align="center">
+</br>
 <img src="./img/vscode.png" align="center">
 </div>
 
-> DBeaver SQL client software.
+*DBeaver SQL client software.*
 
 <div align="center">
+</br>
 <img src="./img/dbeaver.png" align="center">
 </div>
 
@@ -44,6 +47,7 @@
 
 
 <div align="center">
+</br>
 <img src="./img/creating-database.png" align="center">
 </div>
 
@@ -52,6 +56,7 @@
     Create tables using `create-tables-zoboomafoo.sql` DML script
 
 <div align="center">
+</br>
 <img src="./img/creating-tables.png" align="center">
 </div>
 
@@ -60,6 +65,7 @@
     Create insert procures using `create-insert-procedures.sql` script
 
 <div align="center">
+</br>
 <img src="./img/create-insert-procedures.png" align="center">
 </div>
 
@@ -68,6 +74,7 @@
     Create update procures using `create-update-procedures.sql` script
 
 <div align="center">
+</br>
 <img src="./img/create-update-procedures.png" align="center">
 </div>
 
@@ -76,14 +83,17 @@
     Execute procedures to insert inital data `execute-insert-procedures.sql` script
 
 <div align="center">
+</br>
 <img src="./img/create-update-procedures.png" align="center">
 </div>
 
 <div align="center">
+</br>
 <img src="./img/inserted-example-01.png" align="center">
 </div>
 
 <div align="center">
+</br>
 <img src="./img/inserted-example-02.png" align="center">
 </div>
 
@@ -92,9 +102,11 @@
     Execute procedures to update data `execute-update-procedures.sql` script
 
 <div align="center">
+</br>
 <img src="./img/updated-example-01.png" align="center">
 </div>
 
 <div align="center">
+</br>
 <img src="./img/updated-example-01.png" align="center">
 </div>
