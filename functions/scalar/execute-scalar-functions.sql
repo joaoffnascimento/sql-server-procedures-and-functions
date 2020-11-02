@@ -1,3 +1,6 @@
+-- Created by: João Felipe Fonseca Nascimento
+-- joao.nascimento98@academico.ifs.edu.br - 2020
+
 SELECT dbo.FN_GET_TAMANHO_NM_CIDADE(1)
 
 SELECT dbo.FN_GET_CARGOS_MAIORES_QUE(1000)
