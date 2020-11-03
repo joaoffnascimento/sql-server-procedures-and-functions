@@ -2,6 +2,9 @@
 
 ## Resolução atividades do dia 27/10/2020, Procedures - Functions com SQL SERVER
 
+-- Created by: João Felipe Fonseca Nascimento
+-- joao.nascimento98@academico.ifs.edu.br - 2020
+
 ## **Contents**:
 
 - [Tools I used on my ubuntu linux](#Tools-I-used-on-my-ubuntu-linux)
