@@ -129,3 +129,12 @@
 </br>
 <img src="./img/scalar-create.png" align="center">
 </div>
+
+## [ 08 ] : **Create table functions**
+
+    Create table functions `create-table-functions.sql` script
+
+<div align="center">
+</br>
+<img src="./img/create-table-functions.png" align="center">
+</div>
