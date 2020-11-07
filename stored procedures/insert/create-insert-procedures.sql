@@ -277,3 +277,31 @@ BEGIN
       @p_matricula
     )
 END
+
+GO
+
+CREATE PROCEDURE dbo.USP_INSERT_LOG
+  @SALARIO_ANTERIOR NUMERIC(9,2),
+  @SALARIO_ATUAL NUMERIC(9,2),
+  @UPDATED_AT smalldatetime,
+  @IP VARCHAR(150),
+  @USUARIO VARCHAR(150)
+AS
+BEGIN
+  INSERT INTO admlog
+    (
+    [salario_anterior],
+    [salario_atual],
+    [updated_at],
+    [ip],
+    [usuario]
+    )
+  VALUES
+    (
+      @SALARIO_ANTERIOR,
+      @SALARIO_ATUAL,
+      @UPDATED_AT,
+      @IP,
+      @USUARIO
+    )
+END

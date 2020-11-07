@@ -167,11 +167,10 @@ PRINT 'Table creation: adm-log'
 
 CREATE TABLE admlog
 (
-    cod_log INT NOT NULL CHECK(cod_log > 0),
+    cod_log INT NOT NULL CHECK(cod_log > 0) IDENTITY(1, 1) PRIMARY KEY,
     salario_anterior NUMERIC(9,2) NOT NULL CHECK(salario_anterior > 0),
     salario_atual NUMERIC(9,2) NOT NULL CHECK(salario_atual > 0),
     updated_at smalldatetime NOT NULL,
     ip VARCHAR(150) NOT NULL,
-    usuario VARCHAR(150) NOT NULL,
-    CONSTRAINT admlog_pk PRIMARY KEY(cod_log)
+    usuario VARCHAR(150) NOT NULL
 )
