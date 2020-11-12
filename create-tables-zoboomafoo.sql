@@ -174,3 +174,12 @@ CREATE TABLE admlog
     ip VARCHAR(150) NOT NULL,
     usuario VARCHAR(150) NOT NULL
 )
+
+PRINT 'Table creation: sumario-especies'
+
+CREATE TABLE sumario_especies
+(
+    cod_sumario_especies INT NOT NULL CHECK(cod_sumario_especies > 0) IDENTITY(1, 1) PRIMARY KEY,
+    especie VARCHAR(150) NOT NULL,
+    quantidade NUMERIC(9) NOT NULL
+)
