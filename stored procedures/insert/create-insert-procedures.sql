@@ -305,3 +305,22 @@ BEGIN
       @USUARIO
     )
 END
+
+GO
+
+CREATE PROCEDURE dbo.USP_INSERT_SUMARIO_ESPECIE_ANIMAL
+  @p_especie VARCHAR(150),
+  @p_quantidade NUMERIC(9)
+AS
+BEGIN
+  INSERT INTO sumario_especies
+    (
+    [especie],
+    [quantidade]
+    )
+  VALUES
+    (
+      @p_especie,
+      @p_quantidade
+    )
+END

@@ -183,3 +183,13 @@ BEGIN
             
             WHERE cod_limpeza = @p_cod_limpeza
 END
+
+GO
+
+CREATE PROCEDURE dbo.USP_UPDATE_QUANTIDADE_ESPECIE_SUMARIZADA
+    @p_especie VARCHAR(150),
+    @p_quantidade NUMERIC(9)
+AS
+BEGIN
+    UPDATE sumario_especies SET quantidade = ISNULL(@p_quantidade, quantidade) WHERE especie = @p_especie
+END
