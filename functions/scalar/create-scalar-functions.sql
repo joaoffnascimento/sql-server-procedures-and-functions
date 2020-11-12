@@ -198,3 +198,22 @@ BEGIN
 
     Return @IP_Address;
 END
+
+GO
+
+CREATE FUNCTION FN_GET_ESPECIE_DO_SUMARIO (@especie varchar(250))
+
+RETURNS int
+
+AS
+
+BEGIN
+
+    DECLARE @count_especie_in_sumario int
+
+    SET @count_especie_in_sumario = (
+    SELECT COUNT(*) FROM sumario_especies WHERE especie LIKE @especie
+    )
+
+    RETURN @count_especie_in_sumario
+END
